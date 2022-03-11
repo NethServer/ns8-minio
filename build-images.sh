@@ -30,7 +30,7 @@ buildah config --entrypoint=/ \
     --label="org.nethserver.authorizations=traefik@any:routeadm" \
     --label="org.nethserver.tcp-ports-demand=1" \
     --label="org.nethserver.rootfull=0" \
-    --label="org.nethserver.images=docker.io/jmalloc/echo-server:latest" \
+    --label="org.nethserver.images=quay.io/minio/minio:RELEASE.2022-03-11T11-08-23Z" \
     "${container}"
 # Commit the image
 buildah commit "${container}" "${repobase}/${reponame}"

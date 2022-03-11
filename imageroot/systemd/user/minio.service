@@ -1,9 +1,5 @@
-#
-# This systemd unit starts a minio instance using Podman.
-# Most parts of this file come from podman-generate-systemd.
-#
 [Unit]
-Description=minio server
+Description=MinIO server
 
 [Service]
 Environment=PODMAN_SYSTEMD_UNIT=%n
@@ -18,7 +14,8 @@ ExecStart=/usr/bin/podman run \
     --cgroups=no-conmon \
     --replace --name=%N \
     --publish=127.0.0.1:${TCP_PORT}:8080 \
-    ${ECHO_SERVER_IMAGE}
+    --volume=minio-data:/data \
+    ${MINIO_IMAGE}
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/minio.ctr-id -t 10
 ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/minio.ctr-id
 PIDFile=%t/minio.pid
