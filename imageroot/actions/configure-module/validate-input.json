@@ -5,19 +5,26 @@
     "description": "Configure minio",
     "examples": [
         {
-            "host": "myminio.nethserver.org",
+            "host_server": "myminio.nethserver.org",
+            "host_console": "console.myminio.nethserver.org",
             "lets_encrypt": true
         }
     ],
     "type": "object",
     "required": [
-        "host",
+        "host_server",
+	"host_console",
         "lets_encrypt"
     ],
     "properties": {
-        "host": {
+        "host_console": {
             "type": "string",
-            "description": "Host name for the wiki, like 'wiki.nethserver.org'",
+            "description": "Host name for the server, this host will be use by S3 clients",
+            "format": "idn-hostname"
+        },
+        "host_server": {
+            "type": "string",
+            "description": "Host name for the UI, this how will serve the management UI",
             "format": "idn-hostname"
         },
         "lets_encrypt": {

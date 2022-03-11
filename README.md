@@ -19,12 +19,13 @@ Output example:
 Let's assume that the minio instance is named `minio1`.
 
 Launch `configure-module`, by setting the following parameters:
-- `host`: MinIO server host named
+- `host_server`: MinIO API server host name
+- `host_console`: MinIO UI server host name
 - `lets_encrypt`: enable or disable Let's Encrypt certificate
 
 Example:
 
-    api-cli run module/minio1/configure-module --data '{"host": "myminio.nethserver.org", "lets_encrypt": true}'
+    api-cli run module/minio1/configure-module --data '{"host_server": "myminio.nethserver.org", "host_console": "console.myminio.nethserver.org", "lets_encrypt": true}'
 
 The above command will:
 - start and configure the minio instance: default root credentials `minioadmin`:`minioadmin`

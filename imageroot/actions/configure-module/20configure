@@ -23,7 +23,7 @@
 import os
 import agent
 
-server_port, console_port = os.environ['TCP_PORTS'].
+server_port, console_port = os.environ['TCP_PORTS'].split(",")
 
 agent.set_env("TCP_SERVER_PORT", server_port)
 agent.set_env("TCP_CONSOLE_PORT", console_port)
