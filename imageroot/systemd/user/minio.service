@@ -13,9 +13,10 @@ ExecStart=/usr/bin/podman run \
     --cidfile=%t/minio.ctr-id \
     --cgroups=no-conmon \
     --replace --name=%N \
-    --publish=127.0.0.1:${TCP_PORT}:8080 \
+    --publish=127.0.0.1:${TCP_SERVER_PORT}:9000 \
+    --publish=127.0.0.1:${TCP_CONSOLE_PORT}:9001 \
     --volume=minio-data:/data \
-    ${MINIO_IMAGE} server
+    ${MINIO_IMAGE} server /data --console-address ":9001"
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/minio.ctr-id -t 10
 ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/minio.ctr-id
 PIDFile=%t/minio.pid
