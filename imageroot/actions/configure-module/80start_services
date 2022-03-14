@@ -22,4 +22,5 @@
 
 # If the control reaches this step, the service can be enabled and started
 
-systemctl --user enable --now minio.service
+systemctl --user enable minio.service
+systemctl --user restart  minio.service
