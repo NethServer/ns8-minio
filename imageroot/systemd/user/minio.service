@@ -17,7 +17,7 @@ ExecStart=/usr/bin/podman run \
     --publish=127.0.0.1:${TCP_CONSOLE_PORT}:9001 \
     --env=MINIO_ROOT_USER=${MINIO_ROOT_USER} \
     --env=MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD} \
-    --env=MINIO_DOMAIN=${MINIO_DOMAIN} \
+    --env=MINIO_DOMAIN=${MINIO_HOST_SERVER} \
     --volume=minio-data:/data \
     ${MINIO_IMAGE} server /data --console-address ":9001"
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/minio.ctr-id -t 10

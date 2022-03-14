@@ -24,6 +24,13 @@ import json
 import sys
 import agent
 
-config = {}
+config = {'user': 'minioadmin', 'password': 'minioadmin', 'host_server' : '', 'host_console': '', 'lets_encrypte': False}
+
+try:
+    # Read current configuration from config file
+    with open('config.json', 'r') as cf:
+        config = json.loads(cf.read())
+except:
+    pass
 
 json.dump(config, fp=sys.stdout)
