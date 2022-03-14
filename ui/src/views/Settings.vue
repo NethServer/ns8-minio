@@ -19,14 +19,51 @@
       <cv-column>
         <cv-tile light>
           <cv-form @submit.prevent="configureModule">
-            <!-- TODO remove test field and code configuration fields -->
             <cv-text-input
-              :label="$t('settings.test_filed')"
-              v-model="testField"
-              :placeholder="$t('settings.test_filed')"
+              :label="$t('settings.host_server')"
+              v-model="host_server"
+              placeholder="minio.mydomain.org"
               :disabled="loading.getConfiguration || loading.configureModule"
-              :invalid-message="error.testField"
-              ref="testField"
+              :invalid-message="error.host_server"
+              ref="host_server"
+            ></cv-text-input>
+            <cv-text-input
+              :label="$t('settings.host_console')"
+              v-model="host_console"
+              placeholder="console.minio.mydomain.org"
+              :disabled="loading.getConfiguration || loading.configureModule"
+              :invalid-message="error.host_console"
+              ref="host_console"
+            ></cv-text-input>
+            <cv-toggle
+              value="letsEncrypt"
+              :label="$t('settings.lets_encrypt')"
+              v-model="lets_encrypt"
+              :disabled="loading.getConfiguration || loading.configureModule"
+              class="mg-bottom"
+            >
+              <template slot="text-left">{{
+                $t("settings.disabled")
+              }}</template>
+              <template slot="text-right">{{
+                $t("settings.enabled")
+              }}</template>
+             </cv-toggle>
+            <cv-text-input
+              :label="$t('settings.user')"
+              v-model="user"
+              :placeholder="$t('settings.user')"
+              :disabled="loading.getConfiguration || loading.configureModule"
+              :invalid-message="error.user"
+              ref="user"
+            ></cv-text-input>
+            <cv-text-input
+              :label="$t('settings.password')"
+              v-model="password"
+              :placeholder="$t('settings.password')"
+              :disabled="loading.getConfiguration || loading.configureModule"
+              :invalid-message="error.password"
+              ref="password"
             ></cv-text-input>
             <cv-row v-if="error.configureModule">
               <cv-column>
@@ -74,7 +111,11 @@ export default {
         page: "settings",
       },
       urlCheckInterval: null,
-      testField: "", // TODO remove
+      user: "minioadmin",
+      password: "minioadmin",
+      host_server: "",
+      host_console: "",
+      lets_encrypt: true,
       loading: {
         getConfiguration: false,
         configureModule: false,
@@ -82,7 +123,11 @@ export default {
       error: {
         getConfiguration: "",
         configureModule: "",
-        testField: "", // TODO remove
+        host_console: "",
+        host_server: "",
+        user: "",
+        password: "",
+        lets_encrypt: ""
       },
     };
   },
@@ -149,26 +194,44 @@ export default {
       this.loading.getConfiguration = false;
       const config = taskResult.output;
 
-      // TODO set configuration fields
-      // ...
+      this.host_server = config.host_server;
+      this.host_console = config.host_console;
+      this.user = config.user;
+      this.password = config.password;
+      this.lets_encrypt = config.lets_encrypt;
 
-      // TODO remove
-      console.log("config", config);
-
-      // TODO focus first configuration field
-      this.focusElement("testField");
+      this.focusElement("host_server");
     },
     validateConfigureModule() {
       this.clearErrors(this);
       let isValidationOk = true;
 
-      // TODO remove testField and validate configuration fields
-      if (!this.testField) {
+      if (!this.host_server) {
         // test field cannot be empty
-        this.error.testField = this.$t("common.required");
+        this.error.host_server = this.$t("common.required");
 
         if (isValidationOk) {
-          this.focusElement("testField");
+          this.focusElement("host_server");
+          isValidationOk = false;
+        }
+      }
+
+      if (!this.host_console) {
+        // test field cannot be empty
+        this.error.host_console = this.$t("common.required");
+
+        if (isValidationOk) {
+          this.focusElement("host_console");
+          isValidationOk = false;
+        }
+      }
+
+      if (this.host_console == this.host_server) {
+        this.error.host_console = this.$t("settings.different");
+        this.error.host_server = this.$t("settings.different");
+
+        if (isValidationOk) {
+          this.focusElement("host_console");
           isValidationOk = false;
         }
       }
@@ -218,7 +281,11 @@ export default {
         this.createModuleTaskForApp(this.instanceName, {
           action: taskAction,
           data: {
-            // TODO configuration fields
+            host_server: this.host_server,
+            host_console: this.host_console,
+            user: this.user,
+            password: this.password,
+            lets_encrypt: this.lets_encrypt ? true : false
           },
           extra: {
             title: this.$t("settings.configure_instance", {

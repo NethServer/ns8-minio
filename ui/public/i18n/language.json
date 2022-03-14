@@ -24,7 +24,14 @@
     "title": "Settings",
     "configure_instance": "Configure {instance}",
     "save": "Save",
-    "test_filed": "Test field"
+    "host_server": "API server host name",
+    "host_console": "Web interface host name",
+    "lets_encrypt": "Let's Encrypt certificate",
+    "user": "MinIO root user name",
+    "password": "MinIO root password",
+    "disabled": "Disabled",
+    "enabled": "Enabled",
+    "different": "API and web interface hosts must be different"
   },
   "about": {
     "title": "About"
