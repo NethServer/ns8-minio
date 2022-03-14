@@ -30,6 +30,7 @@ agent.set_env("TCP_SERVER_PORT", server_port)
 agent.set_env("TCP_CONSOLE_PORT", console_port)
 
 request = json.load(sys.stdin)
+agent.set_env("MINIO_DOMAIN", request['host_server'])
 user = request.get('user', 'minioadmin')
 password = request.get('password', 'minioadmin')
 agent.set_env("MINIO_ROOT_USER", user)
