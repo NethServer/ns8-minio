@@ -3,6 +3,14 @@
     "title": "Get minio configuration",
     "$id": "http://nethserver.org/json-schema/task/output/minio/get-configuration",
     "description": "Get minio configuration",
-    "examples": [],
+    "examples": [
+        {
+            "host_console": "console.minio.test.local",
+            "host_server": "minio.test.local",
+            "lets_encrypt": true,
+            "password": "nethesis",
+            "user": "nethesis"
+        }
+    ],
     "type": "object"
 }
