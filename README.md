@@ -37,6 +37,25 @@ Send a test HTTP request to the minio backend service:
 
     curl https://myminio.nethserver.org
 
+### Use MinIO as NS8 storage
+
+You can configure a NS8 machine to backup data to a MinIO bucket.
+
+First, create a bucket. You can do from the UI or using the command line, eg:
+```
+curl  https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/local/bin/mc
+chmod a+x /usr/local/bin/mc
+mc alias set minio https://myminio.nethserver.org minioadmin minioadmin --api S3v4
+mc mb minio/test1
+```
+
+Then, create a backup repository. Make sure to set `provider` to `generic-s3`. Example:
+```
+api-cli run cluster/add-backup-repository --data '{"name": "repo1", "provider":"generic-s3", "password":"12345", "url": "s3:myminio.nethserver.org/test1", "parameters": {"aws_access_key_id": "minioadmin", "aws_secret_access_key": "minioadmin"}}'
+```
+
+Finally, schedule a backup using the UI.
+
 ## Uninstall
 
 To uninstall the instance:
