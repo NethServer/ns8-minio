@@ -22,6 +22,8 @@ Launch `configure-module`, by setting the following parameters:
 - `host_server`: MinIO API server host name
 - `host_console`: MinIO UI server host name
 - `lets_encrypt`: enable or disable Let's Encrypt certificate
+- `user`: MinIO admin user name, default to `minioadmin` (optional)
+- `password`: MinIO admin user password, default to `minioadmin` (optional)
 
 Example:
 

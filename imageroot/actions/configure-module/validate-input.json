@@ -5,6 +5,8 @@
     "description": "Configure minio",
     "examples": [
         {
+            "user": "minioadmin",
+            "password": "minioadmin",
             "host_server": "myminio.nethserver.org",
             "host_console": "console.myminio.nethserver.org",
             "lets_encrypt": true
@@ -13,7 +15,7 @@
     "type": "object",
     "required": [
         "host_server",
-	"host_console",
+	    "host_console",
         "lets_encrypt"
     ],
     "properties": {
@@ -31,6 +33,16 @@
             "type": "boolean",
             "title": "Let's Encrypt certificate",
             "description": "Request a valid Let's Encrypt certificate."
+        },
+        "user": {
+            "type": "string",
+            "description": "Name of the admin user, default is 'minioadmin'",
+            "minLength": 1
+        },
+        "password": {
+            "type": "string",
+            "description": "Password of the admin user, default is 'minioadmin'",
+            "minLength": 1
         }
     }
 }
