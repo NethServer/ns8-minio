@@ -20,13 +20,18 @@
 # along with NethServer.  If not, see COPYING.
 #
 
-import json
+import os
 import sys
+import json
 import agent
 import agent.tasks
-import os
 
-request = json.load(sys.stdin)
+config = {}
+
+# Read current configuration from config file
+# Do not use the STDIN, so we can reuse this action also inside the restore
+with open('config.json', 'r') as cf:
+    config = json.loads(cf.read())
 
 # Configure Traefik route for UI
 response_console = agent.tasks.run(
@@ -36,8 +41,8 @@ response_console = agent.tasks.run(
         'instance': f"{os.environ['MODULE_ID']}-console",
         'url':  'http://127.0.0.1:' + os.environ["TCP_CONSOLE_PORT"],
         'http2https': True,
-        'lets_encrypt': request['lets_encrypt'],
-        'host': request['host_console']
+        'lets_encrypt': config['lets_encrypt'],
+        'host': config['host_console']
     },
 )
 
@@ -52,8 +57,8 @@ response_server = agent.tasks.run(
         'instance': f"{os.environ['MODULE_ID']}-server",
         'url':  'http://127.0.0.1:' + os.environ["TCP_SERVER_PORT"],
         'http2https': True,
-        'lets_encrypt': request['lets_encrypt'],
-        'host': request['host_server']
+        'lets_encrypt': config['lets_encrypt'],
+        'host': config['host_server']
     },
 )
 
