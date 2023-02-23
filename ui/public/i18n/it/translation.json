@@ -13,7 +13,11 @@
         "network_error": "Errore di rete",
         "404": "Risorsa non trovata",
         "cannot_retrieve_installed_modules": "Impossibile elencare moduli installati",
-        "cannot_retrieve_module_info": "Impossibile recuperare info modulo"
+        "cannot_retrieve_module_info": "Impossibile recuperare info modulo",
+        "network_timeout": "Timeout di rete",
+        "generic_error": "Qualcosa è andato storto",
+        "401": "Autenticazione non valida",
+        "403": "Operazione non autorizzata"
     },
     "status": {
         "node": "Nodo",
@@ -36,6 +40,6 @@
         "title": "Informazioni"
     },
     "task": {
-        "cannot_create_task": "Impossibile eseguire task [action]"
+        "cannot_create_task": "Impossibile eseguire task {action}"
     }
 }
