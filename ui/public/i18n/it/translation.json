@@ -1,0 +1,52 @@
+{
+    "common": {
+        "required": "Obbligatorio",
+        "processing": "Elaborazione in corso...",
+        "work_in_progress": "In lavorazione"
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "save": "Salva",
+        "configure_instance": "Configura {instance}"
+    },
+    "error": {
+        "error": "Errore",
+        "validation_error": "Errore di validazione",
+        "network_error": "Errore di rete",
+        "404": "Risorsa non trovata",
+        "cannot_retrieve_installed_modules": "Impossibile elencare moduli installati",
+        "cannot_retrieve_module_info": "Impossibile recuperare info modulo",
+        "network_timeout": "Timeout di rete",
+        "generic_error": "Qualcosa è andato storto",
+        "401": "Autenticazione non valida",
+        "403": "Operazione non autorizzata"
+    },
+    "status": {
+        "node": "Nodo",
+        "name": "Nome",
+        "title": "Stato",
+        "size": "Dimensione",
+        "services": "Servizio | Servizi",
+        "created": "Creato",
+        "no_services": "Nessun servizio",
+        "no_images": "Nessuna immagine",
+        "no_volumes": "Nessun volume",
+        "app_images": "Immagine app|Immagini app",
+        "app_instance": "Istanza app",
+        "app_volumes": "Volume app|Volumi app",
+        "installation_node": "Nodo",
+        "mount": "Percorso di mount"
+    },
+    "action": {
+        "configure-module": "Configura modulo",
+        "get-configuration": "Visualizza configurazione",
+        "get-status": "Visualizza stato",
+        "get-module-info": "Visualizza info modulo"
+    },
+    "about": {
+        "title": "Informazioni"
+    },
+    "task": {
+        "cannot_create_task": "Impossibile eseguire task {action}"
+    }
+}
