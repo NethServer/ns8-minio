@@ -7,7 +7,15 @@
     "settings": {
         "title": "Impostazioni",
         "save": "Salva",
-        "configure_instance": "Configura {instance}"
+        "configure_instance": "Configura {instance}",
+        "host_console": "Nome host interfaccia web",
+        "enabled": "Abilitato",
+        "lets_encrypt": "Certificato Let's Encrypt",
+        "user": "Nome utente root di MinIO",
+        "password": "Password per root di MinIO",
+        "different": "API e interfaccia web devono usare host differenti",
+        "disabled": "Disabilitato",
+        "host_server": "Nome host API server"
     },
     "error": {
         "error": "Errore",
