@@ -1,7 +1,8 @@
 {
   "name": "minio",
   "description": {
-    "en": "MinIO: S3 compatible object storage"
+    "en": "MinIO: S3 compatible object storage",
+    "it": "MInIO: storage a oggetti compatibile con S3"
   },
   "categories": ["storage"],
   "authors": [
