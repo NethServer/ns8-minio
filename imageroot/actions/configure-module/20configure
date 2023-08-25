@@ -35,6 +35,8 @@ user = request.get('user', 'minioadmin')
 password = request.get('password', 'minioadmin')
 agent.set_env("MINIO_ROOT_USER", user)
 agent.set_env("MINIO_ROOT_PASSWORD", password)
+storage = request.get('storage', 'minio-data')
+agent.set_env("MINIO_STORAGE", storage)
 
 # Make sure everything is saved inside the environment file
 # just before starting systemd unit

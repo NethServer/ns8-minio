@@ -9,13 +9,14 @@
             "password": "minioadmin",
             "host_server": "myminio.nethserver.org",
             "host_console": "console.myminio.nethserver.org",
-            "lets_encrypt": true
+            "lets_encrypt": true,
+            "storage": "minio-data"
         }
     ],
     "type": "object",
     "required": [
         "host_server",
-	    "host_console",
+        "host_console",
         "lets_encrypt"
     ],
     "properties": {
@@ -42,6 +43,11 @@
         "password": {
             "type": "string",
             "description": "Password of the admin user, default is 'minioadmin'",
+            "minLength": 1
+        },
+        "storage": {
+            "type": "string",
+            "description": "Volume name or path to mount as storage'",
             "minLength": 1
         }
     }
