@@ -37,7 +37,7 @@ Send a test HTTP request to the minio backend service:
 
     curl https://myminio.nethserver.org
 
-### Use MinIO as NS8 storage
+### Use MinIO as NS8 backup storage
 
 You can configure a NS8 machine to backup data to a MinIO bucket.
 
@@ -49,12 +49,28 @@ mc alias set minio https://myminio.nethserver.org minioadmin minioadmin --api S3
 mc mb minio/test1
 ```
 
-Then, create a backup repository. Make sure to set `provider` to `generic-s3`. Example:
+Use the UI to create a generic S3 backup repository and schedule a backup for it.
+
+### Use an external disk as MinIO storage
+
+You can configure a MinIO instance to use a local attached USB/SCSI disk.
+Given a disk named `scsi-disk1`, follow these steps:
 ```
-api-cli run cluster/add-backup-repository --data '{"name": "repo1", "provider":"generic-s3", "password":"12345", "url": "s3:myminio.nethserver.org/test1", "parameters": {"aws_access_key_id": "minioadmin", "aws_secret_access_key": "minioadmin"}}'
+# Create a mount point for your disk:
+$ mkdir -p /mnt/data
+
+# Change fstab to automatically mount the disk at boot
+$ echo '/dev/disk/by-id/scsi-disk1 /mnt/data ext4 defaults,nofail,discard 0 0' >> /etc/fstab
+$ systemctl daemon-reload
+
+# Mount the disk
+$ mount /mnt/data
+
+# Make sure the disk is accessible from Minio instance (eg. minio1)
+$ chown minio1:minio1 /mnt/data/
 ```
 
-Finally, schedule a backup using the UI.
+From the module UI, setup the `Storage path` under the advanded section and set it to `/mnt/data`.
 
 ## Uninstall
 
