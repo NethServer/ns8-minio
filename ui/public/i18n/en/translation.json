@@ -2,7 +2,8 @@
   "common": {
     "required": "Required",
     "work_in_progress": "Work in progress",
-    "processing": "Processing..."
+    "processing": "Processing...",
+    "advanced": "Advanced"
   },
   "status": {
     "title": "Status",
@@ -31,7 +32,9 @@
     "password": "MinIO root password",
     "disabled": "Disabled",
     "enabled": "Enabled",
-    "different": "API and web interface hosts must be different"
+    "different": "API and web interface hosts must be different",
+    "storage_path": "Storage path",
+    "storage_path_helper": "MinIO stores data in 'minio-data' by default. To use an external disk instead, enter a full path like '/mnt/data', make sure this location already exists and is a properly formatted and mounted disk. But remember, changing the storage path means it won't be part of the backup."
   },
   "about": {
     "title": "About"
