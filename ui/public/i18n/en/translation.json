@@ -26,6 +26,7 @@
     "configure_instance": "Configure {instance}",
     "save": "Save",
     "host_server": "API server host name",
+    "host_server_helper": "The API server listens both on HTTP and HTTPS ports. Use the HTTP protocol only from a private network.",
     "host_console": "Web interface host name",
     "lets_encrypt": "Let's Encrypt certificate",
     "user": "MinIO root user name",

@@ -56,7 +56,7 @@ response_server = agent.tasks.run(
     data={
         'instance': f"{os.environ['MODULE_ID']}-server",
         'url':  'http://127.0.0.1:' + os.environ["TCP_SERVER_PORT"],
-        'http2https': True,
+        'http2https': False,
         'lets_encrypt': config['lets_encrypt'],
         'host': config['host_server']
     },

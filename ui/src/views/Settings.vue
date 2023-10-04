@@ -25,6 +25,7 @@
               placeholder="minio.mydomain.org"
               :disabled="loading.getConfiguration || loading.configureModule"
               :invalid-message="error.host_server"
+              :helper-text="$t('settings.host_server_helper')"
               ref="host_server"
             ></cv-text-input>
             <cv-text-input
