@@ -27,7 +27,7 @@
         "password": "Contraseña root para MinIO"
     },
     "common": {
-        "required": "Required",
+        "required": "Requerido",
         "work_in_progress": "Trabajando",
         "processing": "Procesando...",
         "advanced": "Avanzado"
