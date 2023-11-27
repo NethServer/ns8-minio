@@ -1,0 +1,63 @@
+{
+    "error": {
+        "403": "Operación no autorizada",
+        "cannot_retrieve_installed_modules": "No es posible recibir los módulos instalados",
+        "401": "Autenticación no válida",
+        "cannot_retrieve_module_info": "No es posible recibir la información del módulo",
+        "generic_error": "Algo ha salido mal",
+        "error": "Error",
+        "network_timeout": "Tiempo de espera de red agotado",
+        "404": "Recurso no encontrado",
+        "network_error": "Error de red",
+        "validation_error": "Error de validación"
+    },
+    "settings": {
+        "user": "Nombre del usuario root de MinIO",
+        "configure_instance": "Configurar {instance}",
+        "different": "Los hosts de la API y de la interfaz web deben ser diferentes",
+        "disabled": "Deshabilitado",
+        "host_console": "Nombre del host de la interfaz web",
+        "storage_path_helper": "MinIO almacena los datos en 'minio-data' por defecto. Para utilizar un disco externo en su lugar, introduzca una ruta completa como '/mnt/data', asegúrese de que esta ubicación ya existe y es un disco correctamente formateado y montado. Pero recuerde, cambiar la ruta de almacenamiento significa que no formará parte de la copia de seguridad.",
+        "lets_encrypt": "Certificado Let's Encrypt",
+        "host_server": "Nombre del servidor API",
+        "save": "Guardar",
+        "enabled": "Habilitado",
+        "storage_path": "Ruta del almacenamiento",
+        "title": "Ajustes",
+        "password": "Contraseña root para MinIO"
+    },
+    "common": {
+        "required": "Obligatorio",
+        "work_in_progress": "Trabajo en curso",
+        "processing": "Procesando...",
+        "advanced": "Avanzado"
+    },
+    "status": {
+        "created": "Creado",
+        "size": "Tamaño",
+        "name": "Nombre",
+        "no_images": "No hay imágenes",
+        "app_volumes": "Volúmen de aplicación | Volúmenes de aplicaciones",
+        "services": "Servicio | Servicios",
+        "app_images": "Imagen de App | Imágenes de App",
+        "no_services": "No hay servicios",
+        "app_instance": "Instancia de la aplicación",
+        "mount": "Montar",
+        "title": "Estado",
+        "installation_node": "Nodo de instalación",
+        "node": "Nodo",
+        "no_volumes": "Sin volúmenes"
+    },
+    "about": {
+        "title": "Acerca de"
+    },
+    "action": {
+        "get-module-info": "Obtener información del módulo",
+        "get-status": "Obtener el estado",
+        "configure-module": "Configurar el módulo",
+        "get-configuration": "Obtener la configuración"
+    },
+    "task": {
+        "cannot_create_task": "No se puede crear la tarea {action}"
+    }
+}
