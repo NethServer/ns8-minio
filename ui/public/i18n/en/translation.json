@@ -34,7 +34,11 @@
     "enabled": "Enabled",
     "different": "API and web interface hosts must be different",
     "storage_path": "Storage path",
-    "storage_path_helper": "MinIO stores data in 'minio-data' by default. To use an external disk instead, enter a full path like '/mnt/data', make sure this location already exists and is a properly formatted and mounted disk. But remember, changing the storage path means it won't be part of the backup."
+    "storage_path_helper": "MinIO stores data in 'minio-data' by default. To use an external disk instead, enter a full path like '/mnt/data', make sure this location already exists and is a properly formatted and mounted disk. But remember, changing the storage path means it won't be part of the backup.",
+    "host_server_pattern": "Must be a valid fully qualified domain name",
+    "host_server_format": "Must be a valid fully qualified domain name",
+    "host_console_pattern": "Must be a valid fully qualified domain name",
+    "host_console_format": "Must be a valid fully qualified domain name"
   },
   "about": {
     "title": "About"
