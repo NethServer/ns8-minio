@@ -24,7 +24,7 @@
               v-model="host_server"
               placeholder="minio.mydomain.org"
               :disabled="loading.getConfiguration || loading.configureModule"
-              :invalid-message="error.host_server"
+              :invalid-message="$t(error.host_server)"
               ref="host_server"
             ></cv-text-input>
             <cv-text-input
@@ -32,7 +32,7 @@
               v-model="host_console"
               placeholder="console.minio.mydomain.org"
               :disabled="loading.getConfiguration || loading.configureModule"
-              :invalid-message="error.host_console"
+              :invalid-message="$t(error.host_console)"
               ref="host_console"
             ></cv-text-input>
             <cv-toggle
