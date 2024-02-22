@@ -23,12 +23,14 @@
         "host_console": {
             "type": "string",
             "description": "Host name for the server, this host will be use by S3 clients",
-            "format": "idn-hostname"
+            "format": "hostname",
+            "pattern": "\\."
         },
         "host_server": {
             "type": "string",
             "description": "Host name for the UI, this how will serve the management UI",
-            "format": "idn-hostname"
+            "format": "hostname",
+            "pattern": "\\."
         },
         "lets_encrypt": {
             "type": "boolean",
