@@ -1,1 +1,53 @@
-{}
+{
+    "about": {
+        "title": "Über"
+    },
+    "task": {
+        "cannot_create_task": "Aufgabe {action} kann nicht erstellt werden"
+    },
+    "error": {
+        "error": "Fehler",
+        "401": "Ungültige Authentifizierung",
+        "network_timeout": "Netzwerk-Zeitüberschreitung",
+        "network_error": "Netzwerk-Fehler",
+        "403": "Operation nicht genehmigt",
+        "404": "Ressource nicht gefunden",
+        "generic_error": "Etwas ist schief gegangen",
+        "validation_error": "Überprüfungsfehler",
+        "cannot_retrieve_module_info": "Modul-Info kann nicht abgerufen werden",
+        "cannot_retrieve_installed_modules": "Installierte Module können nicht abgerufen werden"
+    },
+    "common": {
+        "required": "Erforderlich",
+        "work_in_progress": "in Arbeit",
+        "processing": "Verarbeite..."
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "save": "Speichern",
+        "disabled": "Deaktiviert",
+        "enabled": "Aktiviert"
+    },
+    "status": {
+        "app_volumes": "App Volumen | App Volumen",
+        "installation_node": "Installations-Knoten",
+        "node": "Knoten",
+        "name": "Name",
+        "size": "Größe",
+        "created": "Erstellt",
+        "mount": "Einhängepunkt",
+        "no_services": "Keine Dienste",
+        "no_images": "Keine Abbilder",
+        "no_volumes": "Keine Volumen",
+        "title": "Status",
+        "app_instance": "App-Instanz",
+        "services": "Dienst | Dienste",
+        "app_images": "App Abbild | App Abbilder"
+    },
+    "action": {
+        "get-status": "Status abrufen",
+        "get-configuration": "Konfiguration abrufen",
+        "configure-module": "Modul konfigurieren",
+        "get-module-info": "Modul-Info abrufen"
+    }
+}
