@@ -25,7 +25,8 @@
     "common": {
         "required": "Required",
         "work_in_progress": "Work in progress",
-        "processing": "Processing..."
+        "processing": "Processing...",
+        "advanced": "Advanced"
     },
     "error": {
         "cannot_retrieve_installed_modules": "Cannot retrieve installed modules",
