@@ -3,7 +3,7 @@
         "required": "Required",
         "work_in_progress": "Work in progress",
         "processing": "Processing...",
-        "advanced": "Advanced"
+        "advanced": "Aurreratua"
     },
     "status": {
         "created": "Created",
@@ -34,7 +34,7 @@
         "network_error": "Network error"
     },
     "about": {
-        "title": "About"
+        "title": "Honi buruz"
     },
     "action": {
         "get-module-info": "Get module info",
