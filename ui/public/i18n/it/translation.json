@@ -9,12 +9,12 @@
         "save": "Salva",
         "configure_instance": "Configura {instance}",
         "host_console": "Nome host interfaccia web",
-        "enabled": "Abilitato",
+        "enabled": "Enabled",
         "lets_encrypt": "Certificato Let's Encrypt",
         "user": "Nome utente root di MinIO",
         "password": "Password per root di MinIO",
         "different": "API e interfaccia web devono usare host differenti",
-        "disabled": "Disabilitato",
+        "disabled": "Disabled",
         "host_server": "Nome host API server"
     },
     "error": {
