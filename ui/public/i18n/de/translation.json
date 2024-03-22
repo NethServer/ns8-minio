@@ -26,8 +26,8 @@
     "settings": {
         "title": "Einstellungen",
         "save": "Speichern",
-        "disabled": "Disabled",
-        "enabled": "Enabled",
+        "disabled": "Deaktiviert",
+        "enabled": "Aktiviert",
         "configure_instance": "{instance} konfigurieren",
         "host_server": "Hostname des API-Server",
         "host_console": "Hostname der Web-Anwendung",
