@@ -1,0 +1,67 @@
+{
+    "about": {
+        "title": "Über"
+    },
+    "task": {
+        "cannot_create_task": "Aufgabe {action} kann nicht erstellt werden"
+    },
+    "error": {
+        "error": "Fehler",
+        "401": "Authentifizierung fehlerhaft",
+        "network_timeout": "Netzwerk-Zeitüberschreitung",
+        "network_error": "Netzwerk-Fehler",
+        "403": "Vorgang nicht autorisiert",
+        "404": "Ressource nicht gefunden",
+        "generic_error": "Etwas ist schief gegangen",
+        "validation_error": "Fehler bei der Validierung",
+        "cannot_retrieve_module_info": "Fehler beim Abruf der Modul-Info",
+        "cannot_retrieve_installed_modules": "Fehler beim Abruf installierter Module"
+    },
+    "common": {
+        "required": "Erforderlich",
+        "work_in_progress": "In Bearbeitung",
+        "processing": "Verarbeitung läuft...",
+        "advanced": "Erweitert"
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "save": "Speichern",
+        "disabled": "Deaktiviert",
+        "enabled": "Aktiviert",
+        "configure_instance": "{instance} konfigurieren",
+        "host_server": "Hostname des API-Server",
+        "host_console": "Hostname der Web-Anwendung",
+        "lets_encrypt": "Let's Encrypt Zertifikat",
+        "password": "MiniIO Superuser Kennwort",
+        "user": "MinIO Superuser Benutzername",
+        "different": "Hostname von API und Web-Anwendung müssen unterschiedlich sein",
+        "storage_path": "Speicher-Pfad",
+        "storage_path_helper": "MinIO speichert Daten standardmäßig in 'minio-data'. Um stattdessen eine externe Festplatte zu verwenden, einen vollständiger Pfad wie \"/mnt/data\" angeben und sicherstellen, dass dieser Pfsd bereits existiert und eine ordnungsgemäß formatierte und gemountete Festplatte ist. Achtung: Eine Änderung des Speicherpfads bedeutet, dass dieser nicht in die Sicherung einbezogen wird.",
+        "host_server_pattern": "Voll-qualifizierter Domänen-Name (FQDN) erforderlich",
+        "host_server_format": "Voll-qualifizierter Domänen-Name (FQDN) erforderlich",
+        "host_console_pattern": "Voll-qualifizierter Domänen-Name (FQDN) erforderlich",
+        "host_console_format": "Voll-qualifizierter Domänen-Name (FQDN) erforderlich"
+    },
+    "status": {
+        "app_volumes": "App Volumen | App Volumen",
+        "installation_node": "Knoten der Installation",
+        "node": "Knoten",
+        "name": "Name",
+        "size": "Größe",
+        "created": "Erstellt",
+        "mount": "Mount",
+        "no_services": "Keine Dienste",
+        "no_images": "Keine Abbilder",
+        "no_volumes": "Keine Volumen",
+        "title": "Status",
+        "app_instance": "App Instanz",
+        "services": "Dienst | Dienste",
+        "app_images": "App Abbild | App Abbilder"
+    },
+    "action": {
+        "get-status": "Status abrufen",
+        "get-configuration": "Konfiguration abrufen",
+        "configure-module": "Modul konfigurieren",
+        "get-module-info": "Modul-Info abrufen"
+    }
+}
