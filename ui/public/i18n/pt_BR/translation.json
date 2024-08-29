@@ -1,0 +1,67 @@
+{
+    "settings": {
+        "configure_instance": "Configure {instance}",
+        "save": "Save",
+        "title": "Settings",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "lets_encrypt": "Let's Encrypt certificate",
+        "host_console_format": "Must be a valid fully qualified domain name",
+        "storage_path": "Storage path",
+        "host_server_pattern": "Must be a valid fully qualified domain name",
+        "user": "MinIO root user name",
+        "host_console": "Web interface host name",
+        "host_server": "API server host name",
+        "password": "MinIO root password",
+        "different": "API and web interface hosts must be different",
+        "storage_path_helper": "MinIO stores data in 'minio-data' by default. To use an external disk instead, enter a full path like '/mnt/data', make sure this location already exists and is a properly formatted and mounted disk. But remember, changing the storage path means it won't be part of the backup.",
+        "host_server_format": "Must be a valid fully qualified domain name",
+        "host_console_pattern": "Must be a valid fully qualified domain name"
+    },
+    "status": {
+        "created": "Created",
+        "name": "Name",
+        "no_images": "No images",
+        "app_volumes": "App volume | App volumes",
+        "app_images": "App image | App images",
+        "size": "Size",
+        "no_services": "No services",
+        "mount": "Mount",
+        "installation_node": "Installation node",
+        "node": "Node",
+        "no_volumes": "No volumes",
+        "services": "Service | Services",
+        "app_instance": "App instance",
+        "title": "Status"
+    },
+    "common": {
+        "required": "Required",
+        "work_in_progress": "Work in progress",
+        "processing": "Processing...",
+        "advanced": "Advanced"
+    },
+    "error": {
+        "cannot_retrieve_installed_modules": "Cannot retrieve installed modules",
+        "cannot_retrieve_module_info": "Cannot retrieve module info",
+        "generic_error": "Something went wrong",
+        "network_timeout": "Network timeout",
+        "404": "Resource not found",
+        "network_error": "Network error",
+        "validation_error": "Validation error",
+        "403": "Operation not authorized",
+        "401": "Invalid authentication",
+        "error": "Error"
+    },
+    "action": {
+        "get-module-info": "Get module info",
+        "get-status": "Get status",
+        "configure-module": "Configure module",
+        "get-configuration": "Get configuration"
+    },
+    "about": {
+        "title": "About"
+    },
+    "task": {
+        "cannot_create_task": "Cannot create task {action}"
+    }
+}
