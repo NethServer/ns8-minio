@@ -1,0 +1,67 @@
+{
+    "common": {
+        "required": "Required",
+        "work_in_progress": "Work in progress",
+        "processing": "Processing...",
+        "advanced": "Advanced"
+    },
+    "settings": {
+        "configure_instance": "Configure {instance}",
+        "disabled": "Disabled",
+        "save": "Save",
+        "enabled": "Enabled",
+        "title": "Settings",
+        "lets_encrypt": "Let's Encrypt certificate",
+        "host_console_format": "Must be a valid fully qualified domain name",
+        "storage_path": "Storage path",
+        "host_server_pattern": "Must be a valid fully qualified domain name",
+        "password": "MinIO root password",
+        "user": "MinIO root user name",
+        "different": "API and web interface hosts must be different",
+        "host_console": "Web interface host name",
+        "storage_path_helper": "MinIO stores data in 'minio-data' by default. To use an external disk instead, enter a full path like '/mnt/data', make sure this location already exists and is a properly formatted and mounted disk. But remember, changing the storage path means it won't be part of the backup.",
+        "host_server_format": "Must be a valid fully qualified domain name",
+        "host_console_pattern": "Must be a valid fully qualified domain name",
+        "host_server": "API server host name"
+    },
+    "status": {
+        "no_images": "No images",
+        "app_volumes": "App volume | App volumes",
+        "app_images": "App image | App images",
+        "app_instance": "App instance",
+        "mount": "Mount",
+        "title": "Status",
+        "node": "Node",
+        "no_volumes": "No volumes",
+        "created": "Created",
+        "size": "Size",
+        "name": "Name",
+        "services": "Service | Services",
+        "no_services": "No services",
+        "installation_node": "Installation node"
+    },
+    "about": {
+        "title": "About"
+    },
+    "error": {
+        "generic_error": "Something went wrong",
+        "error": "Error",
+        "network_error": "Network error",
+        "validation_error": "Validation error",
+        "403": "Operation not authorized",
+        "cannot_retrieve_installed_modules": "Cannot retrieve installed modules",
+        "cannot_retrieve_module_info": "Cannot retrieve module info",
+        "404": "Resource not found",
+        "401": "Invalid authentication",
+        "network_timeout": "Network timeout"
+    },
+    "action": {
+        "get-module-info": "Get module info",
+        "configure-module": "Configure module",
+        "get-configuration": "Get configuration",
+        "get-status": "Get status"
+    },
+    "task": {
+        "cannot_create_task": "Cannot create task {action}"
+    }
+}

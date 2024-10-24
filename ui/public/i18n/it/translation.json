@@ -1,8 +1,9 @@
 {
     "common": {
         "required": "Obbligatorio",
-        "processing": "Elaborazione in corso...",
-        "work_in_progress": "In lavorazione"
+        "processing": "In elaborazione…",
+        "work_in_progress": "In lavorazione",
+        "advanced": "Avanzato"
     },
     "settings": {
         "title": "Impostazioni",
@@ -15,7 +16,13 @@
         "password": "Password per root di MinIO",
         "different": "API e interfaccia web devono usare host differenti",
         "disabled": "Disabilitato",
-        "host_server": "Nome host API server"
+        "host_server": "Nome host API server",
+        "storage_path": "Percorso di archiviazione",
+        "storage_path_helper": "MinIO memorizza i dati in 'minio-data' per impostazione predefinita. Per utilizzare un disco esterno, inserisci un percorso completo come '/mnt/data', assicurati che questa posizione esista già e sia un disco formattato e montato correttamente. Ma ricorda, cambiare il percorso di archiviazione significa che non farà parte del backup.",
+        "host_server_format": "Deve essere un nome di dominio completamente qualificato e valido",
+        "host_console_pattern": "Deve essere un nome di dominio completamente qualificato e valido",
+        "host_console_format": "Deve essere un nome di dominio completamente qualificato e valido",
+        "host_server_pattern": "Deve essere un nome di dominio completamente qualificato e valido"
     },
     "error": {
         "error": "Errore",
@@ -55,6 +62,6 @@
         "title": "Informazioni"
     },
     "task": {
-        "cannot_create_task": "Impossibile eseguire task {action}"
+        "cannot_create_task": "Impossibile eseguire il task {action}"
     }
 }
