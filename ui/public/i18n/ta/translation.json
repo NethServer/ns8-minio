@@ -1,0 +1,67 @@
+{
+    "status": {
+        "no_images": "No images",
+        "no_volumes": "No volumes",
+        "title": "Status",
+        "app_instance": "App instance",
+        "services": "Service | Services",
+        "app_images": "App image | App images",
+        "app_volumes": "App volume | App volumes",
+        "installation_node": "Installation node",
+        "node": "Node",
+        "name": "Name",
+        "size": "Size",
+        "created": "Created",
+        "mount": "Mount",
+        "no_services": "No services"
+    },
+    "settings": {
+        "title": "Settings",
+        "disabled": "Disabled",
+        "enabled": "Enabled",
+        "save": "Save",
+        "lets_encrypt": "சான்றிதழை குறியாக்குவோம்",
+        "configure_instance": "{உதாரணத்தை உள்ளமைக்கவும்",
+        "host_server": "பநிஇ சேவையக புரவலன் பெயர்",
+        "host_console": "வலை இடைமுக புரவலன் பெயர்",
+        "different": "பநிஇ மற்றும் வலை இடைமுக ஓச்ட்கள் வித்தியாசமாக இருக்க வேண்டும்",
+        "storage_path": "சேமிப்பக பாதை",
+        "user": "மினியோ ரூட் பயனர் பெயர்",
+        "password": "மினியோ ரூட் கடவுச்சொல்",
+        "storage_path_helper": "மினியோ தரவை முன்னிருப்பாக 'மினியோ-டேட்டா' இல் சேமிக்கிறது. அதற்கு பதிலாக வெளிப்புற வட்டைப் பயன்படுத்த, '/mnt/data' போன்ற முழு பாதையை உள்ளிடவும், இந்த இடம் ஏற்கனவே உள்ளது மற்றும் சரியாக வடிவமைக்கப்பட்ட மற்றும் ஏற்றப்பட்ட வட்டு என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள். ஆனால் நினைவில் கொள்ளுங்கள், சேமிப்பக பாதையை மாற்றுவது என்பது காப்புப்பிரதியின் ஒரு பகுதியாக இருக்காது என்பதாகும்.",
+        "host_server_pattern": "செல்லுபடியாகும் முழு தகுதி வாய்ந்த டொமைன் பெயராக இருக்க வேண்டும்",
+        "host_server_format": "செல்லுபடியாகும் முழு தகுதி வாய்ந்த டொமைன் பெயராக இருக்க வேண்டும்",
+        "host_console_pattern": "செல்லுபடியாகும் முழு தகுதி வாய்ந்த டொமைன் பெயராக இருக்க வேண்டும்",
+        "host_console_format": "செல்லுபடியாகும் முழு தகுதி வாய்ந்த டொமைன் பெயராக இருக்க வேண்டும்"
+    },
+    "about": {
+        "title": "About"
+    },
+    "task": {
+        "cannot_create_task": "Cannot create task {action}"
+    },
+    "action": {
+        "get-status": "Get status",
+        "get-configuration": "Get configuration",
+        "configure-module": "Configure module",
+        "get-module-info": "Get module info"
+    },
+    "error": {
+        "error": "Error",
+        "generic_error": "Something went wrong",
+        "validation_error": "Validation error",
+        "network_error": "Network error",
+        "network_timeout": "Network timeout",
+        "401": "Invalid authentication",
+        "403": "Operation not authorized",
+        "404": "Resource not found",
+        "cannot_retrieve_module_info": "Cannot retrieve module info",
+        "cannot_retrieve_installed_modules": "Cannot retrieve installed modules"
+    },
+    "common": {
+        "required": "Required",
+        "work_in_progress": "Work in progress",
+        "processing": "Processing...",
+        "advanced": "Advanced"
+    }
+}
