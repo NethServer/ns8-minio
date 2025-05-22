@@ -1,0 +1,67 @@
+{
+    "settings": {
+        "save": "Opslaan",
+        "disabled": "Uitgeschakeld",
+        "storage_path": "Opslaglocatie",
+        "user": "MinIO root-gebruikersnaam",
+        "configure_instance": "Configureer {instance}",
+        "different": "API- en webinterface hosts moeten verschillend zijn",
+        "host_console": "Hostnaam van de webinterface",
+        "storage_path_helper": "MinIO slaat gegevens standaard op in 'minio-data'. Om een externe schijf te gebruiken, voert u een volledig pad in, zoals '/mnt/data'. Zorg ervoor dat deze locatie al bestaat en een correct geformatteerde en gekoppelde schijf is. Houd er echter rekening mee dat het wijzigen van het opslagpad betekent dat het geen deel uitmaakt van de back-up.",
+        "host_server_format": "Moet een geldige, volledig gekwalificeerde domeinnaam zijn",
+        "lets_encrypt": "Let's Encrypt certificaat",
+        "host_console_pattern": "Moet een geldige, volledig gekwalificeerde domeinnaam zijn",
+        "host_server": "Hostnaam van de API-server",
+        "host_console_format": "Moet een geldige, volledig gekwalificeerde domeinnaam zijn",
+        "enabled": "Ingeschakeld",
+        "title": "Instellingen",
+        "host_server_pattern": "Moet een geldige, volledig gekwalificeerde domeinnaam zijn",
+        "password": "MinIO root paswoord"
+    },
+    "error": {
+        "error": "Fout",
+        "403": "Opdracht niet toegestaan",
+        "cannot_retrieve_installed_modules": "Kan geïnstalleerde modules niet ophalen",
+        "401": "Ongeldige authenticatie",
+        "cannot_retrieve_module_info": "Module-info kan niet worden opgehaald",
+        "generic_error": "Er ging iets mis",
+        "network_timeout": "Netwerktime-out",
+        "404": "Bron niet gevonden",
+        "network_error": "Netwerkfout",
+        "validation_error": "Validatiefout"
+    },
+    "common": {
+        "required": "Vereist",
+        "work_in_progress": "Werk in uitvoering",
+        "processing": "Verwerken...",
+        "advanced": "Uitgebreid"
+    },
+    "status": {
+        "created": "Gemaakt",
+        "size": "Grootte",
+        "name": "Naam",
+        "no_images": "Geen images",
+        "app_volumes": "App volume | App volumen",
+        "services": "Dienst | Diensten",
+        "app_images": "App kopie | App kopieën",
+        "no_services": "Geen services",
+        "app_instance": "App-instantie",
+        "mount": "Koppelen",
+        "title": "Status",
+        "installation_node": "Installatie node",
+        "node": "Node",
+        "no_volumes": "Geen volumes"
+    },
+    "about": {
+        "title": "Over"
+    },
+    "action": {
+        "get-module-info": "Module-info ophalen",
+        "get-status": "Status ophalen",
+        "configure-module": "Module configureren",
+        "get-configuration": "Configuratie ophalen"
+    },
+    "task": {
+        "cannot_create_task": "Kan taak {actie} niet aanmaken"
+    }
+}
