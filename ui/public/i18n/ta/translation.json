@@ -1,27 +1,27 @@
 {
     "status": {
-        "no_images": "No images",
-        "no_volumes": "No volumes",
-        "title": "Status",
-        "app_instance": "App instance",
-        "services": "Service | Services",
-        "app_images": "App image | App images",
-        "app_volumes": "App volume | App volumes",
-        "installation_node": "Installation node",
-        "node": "Node",
-        "name": "Name",
-        "size": "Size",
-        "created": "Created",
-        "mount": "Mount",
-        "no_services": "No services"
+        "no_images": "படங்கள் இல்லை",
+        "no_volumes": "தொகுதிகள் இல்லை",
+        "title": "நிலை",
+        "app_instance": "பயன்பாட்டு நிகழ்வு",
+        "services": "பணி | சேவைகள்",
+        "app_images": "பயன்பாட்டு படம் | பயன்பாட்டு படங்கள்",
+        "app_volumes": "பயன்பாட்டு தொகுதி | பயன்பாட்டு தொகுதிகள்",
+        "installation_node": "நிறுவல் முனை",
+        "node": "கணு",
+        "name": "பெயர்",
+        "size": "அளவு",
+        "created": "உருவாக்கப்பட்டது",
+        "mount": "மவுண்ட்",
+        "no_services": "சேவைகள் இல்லை"
     },
     "settings": {
-        "title": "Settings",
-        "disabled": "Disabled",
-        "enabled": "Enabled",
-        "save": "Save",
+        "title": "அமைப்புகள்",
+        "disabled": "முடக்கப்பட்டது",
+        "enabled": "இயக்கப்பட்டது",
+        "save": "சேமி",
         "lets_encrypt": "சான்றிதழை குறியாக்குவோம்",
-        "configure_instance": "{உதாரணத்தை உள்ளமைக்கவும்",
+        "configure_instance": "{நிகழ்வை) உள்ளமை",
         "host_server": "பநிஇ சேவையக புரவலன் பெயர்",
         "host_console": "வலை இடைமுக புரவலன் பெயர்",
         "different": "பநிஇ மற்றும் வலை இடைமுக ஓச்ட்கள் வித்தியாசமாக இருக்க வேண்டும்",
@@ -35,33 +35,33 @@
         "host_console_format": "செல்லுபடியாகும் முழு தகுதி வாய்ந்த டொமைன் பெயராக இருக்க வேண்டும்"
     },
     "about": {
-        "title": "About"
+        "title": "பற்றி"
     },
     "task": {
-        "cannot_create_task": "Cannot create task {action}"
+        "cannot_create_task": "பணியை உருவாக்க முடியாது {action}"
     },
     "action": {
-        "get-status": "Get status",
-        "get-configuration": "Get configuration",
-        "configure-module": "Configure module",
-        "get-module-info": "Get module info"
+        "get-status": "அந்தச்தைப் பெறுங்கள்",
+        "get-configuration": "உள்ளமைவைப் பெறுங்கள்",
+        "configure-module": "தொகுதியை உள்ளமைக்கவும்",
+        "get-module-info": "தொகுதி தகவலைப் பெறுங்கள்"
     },
     "error": {
-        "error": "Error",
-        "generic_error": "Something went wrong",
-        "validation_error": "Validation error",
-        "network_error": "Network error",
-        "network_timeout": "Network timeout",
-        "401": "Invalid authentication",
-        "403": "Operation not authorized",
-        "404": "Resource not found",
-        "cannot_retrieve_module_info": "Cannot retrieve module info",
-        "cannot_retrieve_installed_modules": "Cannot retrieve installed modules"
+        "error": "பிழை",
+        "generic_error": "ஏதோ தவறு நடந்தது",
+        "validation_error": "சரிபார்ப்பு பிழை",
+        "network_error": "பிணைய பிழை",
+        "network_timeout": "பிணைய நேரம் முடிந்தது",
+        "401": "தவறான ஏற்பு",
+        "403": "செயல்பாடு அங்கீகரிக்கப்படவில்லை",
+        "404": "சான்று கிடைக்கவில்லை",
+        "cannot_retrieve_module_info": "தொகுதி தகவலை மீட்டெடுக்க முடியாது",
+        "cannot_retrieve_installed_modules": "நிறுவப்பட்ட தொகுதிகளை மீட்டெடுக்க முடியாது"
     },
     "common": {
-        "required": "Required",
-        "work_in_progress": "Work in progress",
-        "processing": "Processing...",
+        "required": "தேவை",
+        "work_in_progress": "வேலை முன்னேற்றத்தில் உள்ளது",
+        "processing": "செயலாக்கம் ...",
         "advanced": "Advanced"
     }
 }
