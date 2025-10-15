@@ -16,8 +16,7 @@
     "type": "object",
     "required": [
         "host_server",
-        "host_console",
-        "lets_encrypt"
+        "host_console"
     ],
     "properties": {
         "host_console": {
