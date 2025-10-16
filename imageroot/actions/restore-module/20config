@@ -35,4 +35,5 @@ with open('config.json', 'r') as cf:
 if "lets_encrypt" in config:
     del config["lets_encrypt"]
 
-agent.tasks.run(agent_id=os.environ['AGENT_ID'], action='configure-module', data=config)
+configure_retval = agent.tasks.run(agent_id=os.environ['AGENT_ID'], action='configure-module', data=config)
+agent.assert_exp(configure_retval['exit_code'] == 0, "The configure-module subtask failed!")
