@@ -59,7 +59,7 @@
                 $t("settings.enabled")
               }}</template>
             </NsToggle>
-            <cv-row v-if="letsEncryptIsEnabled && !lets_encrypt">
+            <cv-row v-if="isLetsEncryptCurrentlyEnabled && !lets_encrypt">
               <cv-column>
                 <NsInlineNotification
                   kind="warning"
@@ -186,7 +186,7 @@ export default {
       host_server: "",
       host_console: "",
       lets_encrypt: true,
-      letsEncryptIsEnabled: false,
+      isLetsEncryptCurrentlyEnabled: false,
       storage: "",
       loading: {
         getConfiguration: false,
@@ -330,7 +330,7 @@ export default {
       this.user = config.user;
       this.password = config.password;
       this.lets_encrypt = config.lets_encrypt;
-      this.letsEncryptIsEnabled = config.lets_encrypt;
+      this.isLetsEncryptCurrentlyEnabled = config.lets_encrypt;
       this.storage = config.storage;
 
       this.focusElement("host_server");
