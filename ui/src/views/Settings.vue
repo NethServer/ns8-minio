@@ -96,7 +96,7 @@
               :invalid-message="error.password"
               ref="password"
             ></cv-text-input>
-              <cv-accordion ref="accordion">
+            <cv-accordion ref="accordion">
               <cv-accordion-item :open="toggleAccordion[0]">
                 <template slot="title">{{ $t("common.advanced") }}</template>
                 <template slot="content">
@@ -105,14 +105,14 @@
                     v-model="storage"
                     :helper-text="$t('settings.storage_path_helper')"
                     :invalid-message="error.storage"
-                :disabled="stillLoading"
+                    :disabled="stillLoading"
                     ref="storage"
                   >
                   </cv-text-input>
                 </template>
               </cv-accordion-item>
-              </cv-accordion>
-              <br/>
+            </cv-accordion>
+            <br />
             <cv-row v-if="error.configureModule">
               <cv-column>
                 <NsInlineNotification
@@ -440,7 +440,7 @@ export default {
             user: this.user,
             password: this.password,
             lets_encrypt: this.lets_encrypt ? true : false,
-            storage: this.storage
+            storage: this.storage,
           },
           extra: {
             title: this.$t("settings.configure_instance", {
