@@ -2,7 +2,7 @@
     "error": {
         "403": "Operación no autorizada",
         "cannot_retrieve_installed_modules": "No se pueden recuperar los módulos instalados",
-        "401": "Autentificación inválida",
+        "401": "Autenticación no válida",
         "cannot_retrieve_module_info": "No se puede recuperar la información del módulo",
         "generic_error": "Algo ha salido mal",
         "error": "Error",
@@ -23,17 +23,17 @@
         "save": "Guardar",
         "enabled": "Activado",
         "storage_path": "Ruta del almacenamiento",
-        "title": "Ajustes",
+        "title": "Configuración",
         "password": "Contraseña root para MinIO",
-        "host_server_pattern": "Debe ser un nombre de dominio válido y completo",
-        "host_server_format": "Debe ser un nombre de dominio válido y completo",
-        "host_console_pattern": "Debe ser un nombre de dominio válido y completo",
-        "host_console_format": "Debe ser un nombre de dominio válido y completo"
+        "host_server_pattern": "Debe ser un nombre de dominio cualificado válido",
+        "host_server_format": "Debe ser un nombre de dominio cualificado válido",
+        "host_console_pattern": "Debe ser un nombre de dominio cualificado válido",
+        "host_console_format": "Debe ser un nombre de dominio cualificado válido"
     },
     "common": {
         "required": "Obligatorio",
         "work_in_progress": "Trabajando",
-        "processing": "Procesando...",
+        "processing": "Procesando…",
         "advanced": "Avanzado"
     },
     "status": {
@@ -41,7 +41,7 @@
         "size": "Tamaño",
         "name": "Nombre",
         "no_images": "Sin imágenes",
-        "app_volumes": "Volumen de la aplicación| Volumen de las aplicaciones",
+        "app_volumes": "Volumen de la aplicación | Volúmenes de las aplicaciones",
         "services": "Servicio | Servicios",
         "app_images": "Imagen de la aplicación| Imágenes de las aplicaciones",
         "no_services": "Sin servicios",
@@ -50,16 +50,16 @@
         "title": "Estado",
         "installation_node": "Nodo de la instalación",
         "node": "Nodo",
-        "no_volumes": "Sin volumenes"
+        "no_volumes": "Sin volúmenes"
     },
     "about": {
         "title": "Acerca de"
     },
     "action": {
         "get-module-info": "Obtener información del módulo",
-        "get-status": "Obtener el estado",
-        "configure-module": "Configurar el módulo",
-        "get-configuration": "Obtener los ajustes"
+        "get-status": "Obtener estado",
+        "configure-module": "Configurar módulo",
+        "get-configuration": "Obtener configuración"
     },
     "task": {
         "cannot_create_task": "No se puede crear la tarea {action}"
