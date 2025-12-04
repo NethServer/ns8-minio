@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+
+#
+# Copyright (C) 2025 Nethesis S.r.l.
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
+# Configure traefik route for the module
+
+import os
+import sys
+import json
+import agent
+
+config = json.load(sys.stdin)
+
+# Configure Traefik route for UI
+set_route_console = {
+    'instance': f"{os.environ['MODULE_ID']}-console",
+    'url':  'http://127.0.0.1:' + os.environ["TCP_CONSOLE_PORT"],
+    'http2https': True,
+    'host': config['host_console'],
+    'lets_encrypt_check': True,
+    'lets_encrypt_cleanup': True,
+}
+if 'lets_encrypt' in config:
+    set_route_console['lets_encrypt'] = config['lets_encrypt']
+
+agent.set_route(set_route_console)
+
+# Configure Traefik route for API
+set_route_server = {
+    'instance': f"{os.environ['MODULE_ID']}-server",
+    'url':  'http://127.0.0.1:' + os.environ["TCP_SERVER_PORT"],
+    'http2https': True,
+    'host': config['host_server'],
+    'lets_encrypt_check': True,
+    'lets_encrypt_cleanup': True,
+}
+if 'lets_encrypt' in config:
+    set_route_server['lets_encrypt'] = config['lets_encrypt']
+
+agent.set_route(set_route_server)

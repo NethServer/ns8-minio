@@ -21,7 +21,6 @@
 #
 
 import os
-import sys
 import json
 import agent
 import agent.tasks
@@ -32,16 +31,9 @@ config = {}
 with open('config.json', 'r') as cf:
     config = json.loads(cf.read())
 
-server_port, console_port = os.environ['TCP_PORTS'].split(",")
-agent.set_env("TCP_SERVER_PORT", server_port)
-agent.set_env("TCP_CONSOLE_PORT", console_port)
+# remove lets_encrypt if present to avoid issues
+if "lets_encrypt" in config:
+    del config["lets_encrypt"]
 
-agent.set_env("MINIO_HOST_SERVER", config['host_server'])
-user = config.get('user', 'minioadmin')
-password = config.get('password', 'minioadmin')
-agent.set_env("MINIO_ROOT_USER", user)
-agent.set_env("MINIO_ROOT_PASSWORD", password)
-
-# Make sure everything is saved inside the environment file
-# just before starting systemd unit
-agent.dump_env()
+configure_retval = agent.tasks.run(agent_id=os.environ['AGENT_ID'], action='configure-module', data=config)
+agent.assert_exp(configure_retval['exit_code'] == 0, "The configure-module subtask failed!")
