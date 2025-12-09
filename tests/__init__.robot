@@ -12,5 +12,4 @@ Connect to the node
     Should Be True    '${output}' == 'running' or '${output}' == 'degraded'
 
 *** Settings ***
-Resource    _init__.robot
-Suite Setup    Connect to the node
+Suite Setup       Connect to the Node
