@@ -1016,6 +1016,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@ibm/telemetry-js@^1.5.0":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@ibm/telemetry-js/-/telemetry-js-1.10.2.tgz#6d4bfb5cce275b8a061c64199bcc9f1ad23477b2"
+  integrity sha512-F8+/NNUwtm8BuFz18O9KPvIFTFDo8GUSoyhPxPjEpk7nEyEzWGfhIiEPhL00B2NdHRLDSljh3AiCfSnL/tutiQ==
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.npmmirror.com/@intervolga/optimize-cssnano-plugin/download/@intervolga/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -1034,9 +1039,9 @@
     glob-to-regexp "^0.3.0"
 
 "@nethserver/ns8-ui-lib@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.npmmirror.com/@nethserver/ns8-ui-lib/-/ns8-ui-lib-1.7.0.tgz#a7fccab4f9996ea5c73a213c72db1c82718f2fc4"
-  integrity sha512-epBeALnftM9IALFH5f6Fbkm+94eN8g/v7uazPP63t3aUmrUm8npxx7gfcjMX89HZ98ZEY6HKfFgb22dv3aqKdg==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@nethserver/ns8-ui-lib/-/ns8-ui-lib-1.8.0.tgz#c2ee0042222b9f864a60fb6e2a1a6327631bfcdb"
+  integrity sha512-8aZ4l6qDnZMfDSt3M0rAatbtXwrkTcRsTjydCjaMivefWDnzv2rUIgfCYsDPswtwmO/jvGBxs0sJRGgosBaM/w==
   dependencies:
     "@rollup/plugin-json" "^4.1.0"
     core-js "^3.15.2"
@@ -3245,21 +3250,16 @@ dashdash@^1.12.0:
     assert-plus "^1.0.0"
 
 date-fns-tz@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.1.6.tgz#93cbf354e2aeb2cd312ffa32e462c1943cf20a8e"
-  integrity sha512-nyy+URfFI3KUY7udEJozcoftju+KduaqkVfwyTIE0traBiVye09QnyWKLZK7drRr5h9B7sPJITmQnS3U6YOdQg==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.3.8.tgz#083e3a4e1f19b7857fa0c18deea6c2bc46ded7b9"
+  integrity sha512-qwNXUFtMHTTU6CFSFjoJ80W8Fzzp24LntbjFFBgL/faqds4e5mo9mftoRLgr3Vi1trISsg4awSpYVsOQCRnapQ==
 
-date-fns@^2.0.0:
+date-fns@^2.0.0, date-fns@^2.23.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
   dependencies:
     "@babel/runtime" "^7.21.0"
-
-date-fns@^2.23.0:
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.23.0.tgz#4e886c941659af0cf7b30fafdd1eaa37e88788a9"
-  integrity sha512-5ycpauovVyAk0kXNZz6ZoB9AYMZB4DObse7P3BPWmyEjXNORTI8EJ6X0uaSAq4sCHzM1uajzrkr6HnsLQpxGXA==
 
 de-indent@^1.0.2:
   version "1.0.2"
