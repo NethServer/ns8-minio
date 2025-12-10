@@ -23,6 +23,7 @@
 import json
 import sys
 import agent
+import os
 
 config = {'user': 'minioadmin', 'password': 'minioadmin', 'host_server' : '', 'host_console': '', 'lets_encrypte': False}
 
@@ -30,6 +31,10 @@ try:
     # Read current configuration from config file
     with open('config.json', 'r') as cf:
         config = json.loads(cf.read())
+        config['lets_encrypt'] = (
+            agent.get_route(f"{os.environ['MODULE_ID']}-console").get('lets_encrypt', False) and
+            agent.get_route(f"{os.environ['MODULE_ID']}-server").get('lets_encrypt', False)
+        )
 except:
     pass
 

@@ -25,11 +25,8 @@ import sys
 import json
 import agent
 
-server_port, console_port = os.environ['TCP_PORTS'].split(",")
-agent.set_env("TCP_SERVER_PORT", server_port)
-agent.set_env("TCP_CONSOLE_PORT", console_port)
-
 request = json.load(sys.stdin)
+
 agent.set_env("MINIO_HOST_SERVER", request['host_server'])
 user = request.get('user', 'minioadmin')
 password = request.get('password', 'minioadmin')
@@ -37,10 +34,6 @@ agent.set_env("MINIO_ROOT_USER", user)
 agent.set_env("MINIO_ROOT_PASSWORD", password)
 storage = request.get('storage', 'minio-data')
 agent.set_env("MINIO_STORAGE", storage)
-
-# Make sure everything is saved inside the environment file
-# just before starting systemd unit
-agent.dump_env()
 
 # Save configuration to JSON for later user and backup
 with open('config.json', 'w') as config:
