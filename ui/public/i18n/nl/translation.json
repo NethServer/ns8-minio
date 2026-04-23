@@ -33,7 +33,7 @@
     "common": {
         "required": "Vereist",
         "work_in_progress": "Werk in uitvoering",
-        "processing": "Verwerken...",
+        "processing": "Verwerken…",
         "advanced": "Uitgebreid"
     },
     "status": {
